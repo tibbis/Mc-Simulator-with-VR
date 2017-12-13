@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{68CCC21A-E11C-4038-7B84-90F99CEDFD4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CarCamera\CarCam.cs" />
+     <Compile Include="Assets\EmptyClass.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDebugHeadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRHaptics.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRHapticsClip.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRInput.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRLint.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVROnCompleteListener.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVROverlay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlatformMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlugin.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRProfile.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTouchpad.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRChromaticAberration.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRCubemapCapture.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRDebugInfo.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGrabbable.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGrabber.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRModeParms.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRMonoscopic.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRResetOrientation.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRRTOverlayConnector.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+     <Compile Include="Assets\OvrAvatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+     <Compile Include="Assets\OvrAvatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatar.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAsset.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetMesh.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetTexture.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBase.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBody.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarHand.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarLocalDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarPacket.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarProjectorRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRemoteDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKCAPI.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKManager.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettings.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettingsEditor.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
+     <Compile Include="Assets\OVRHarness\Scripts\OVRHarness.cs" />
+     <Compile Include="Assets\OVRHarness\Scripts\OVRSceneLoader.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\IOVRInspectorContext.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRDiscomfortWarning.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRDiscomfortWarningSource.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRGazePointer.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRInputModule.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRInspector.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorContext.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorLoader.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorPanelBuilder.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRMousePointer.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRPhysicsRaycaster.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRPlatformMenu2.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRPointerEventData.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRRaycaster.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRRenderTrackerFrustum.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRScreenFade2.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRSettingsMenu.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRSliderLabelUpdater.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRUISettingsMenu.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRUserPanel.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\OVRWarningList.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\ParticleGazeCursor.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeEventTrigger.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeScroller.cs" />
+     <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRProgressIndicator.cs" />
+     <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\DecimalLatLonMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\NavStsMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\NEDMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\RPYMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geographic_msgs\GeoPointMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\PointMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\PoseMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\PoseStampedMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\PoseWithCovarianceMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\QuaternionMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\TwistMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\TwistWithCovarianceMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\Vector3Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\nav_msgs\OdometryMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\nav_msgs\PathMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgePublisher.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeSubscriber.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeWebSocketConnection.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\Arraysubscribe.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\publisher.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\publishUnityTopic.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\Subscriber.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\CompressedImageMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\ImageMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\PointCloudMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\PointFieldMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\RangeMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\SimpleJSON.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float32Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float64Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float64MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\HeaderMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int32Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int32MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int64Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int64MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int8Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Int8MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\MultiArrayDimensionMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\MultiArrayLayoutMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\PoseMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\StringMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\TimeMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt16Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt16MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt32Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt32MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt64Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt64MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt8Msg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\std_msgs\UInt8MultiArrayMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\unity_package\Simulink2Unity.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\unity_package\UnityMsg.cs" />
+     <Compile Include="Assets\SampleScenes\Cameras\Multiple Cameras\MultiCameraSample.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Scripts\SamplePlayerController.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\CarAudio.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\CarController.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\Suspension.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Scripts\Wheel.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Crosshairs\Script\BulletManager.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Crosshairs\Script\CrosshairManager.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Crosshairs\Script\GunManager.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Crosshairs\Script\UIManager.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Crosshairs\Script\WallManager.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Locomotion\Common\Scripts\TeleportController.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Locomotion\Common\Scripts\TeleportPoint.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Locomotion\Teleport\TeleportDemo.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Mirror\Scripts\MirrorObject.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Scripts\MotionSample.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Scripts\RotationLock.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Scripts\ScaleSample.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\Elevator.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\ElevatorDoors.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\ElevatorTrigger.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\LightContrastFader.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\Staircase.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\StairInducedNausea.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\StairsControl.cs" />
+     <Compile Include="Assets\SampleScenes\Hands\Scripts\ColorGrabbable.cs" />
+     <Compile Include="Assets\SampleScenes\Hands\Scripts\Hand.cs" />
+     <Compile Include="Assets\SampleScenes\Hands\Scripts\HandPose.cs" />
+     <Compile Include="Assets\SampleScenes\Hands\Scripts\TouchController.cs" />
+     <Compile Include="Assets\SampleScenes\Input\Input Tester\Scripts\InputTool.cs" />
+     <Compile Include="Assets\SampleScenes\Input\Keyboard\Scripts\VRKeyboard.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Mono Optimization\NearStereoFarMono\DisplayMono.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Mono Optimization\NearStereoFarMono\MonoCamera.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Mono Optimization\NearStereoFarMono\StereoToMono.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Mono Optimization\scripts\CreateGrid.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Movie Player\MoviePlayerControl.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Movie Player\MoviePlayerSample.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Render Frame Rate\TimeWarp30HzSample.cs" />
+     <Compile Include="Assets\SampleScenes\Rendering\Surface Detail\Scripts\ShaderDemo.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Common\Scripts\leverSystem.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Common\Scripts\LightControl.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Common\Scripts\RotationControl.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Overlay\Scripts\CylinderGeo.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Overlay\Scripts\OverlayUIDemo.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Scripts\GazeInteractionDemo.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Scripts\GazeInteractionInputModule.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Scripts\GazeInteractionReceiver.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Pointers\Scripts\PointersControl.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Tracking Volume\Scripts\OVRTrackerBounds.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Tracking Volume\Scripts\TrackingVolumeControl.cs" />
+     <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
+     <Compile Include="Assets\Scripts\EngineSound.cs" />
+     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\FPSDisplay.cs" />
+     <Compile Include="Assets\Scripts\humanInput.cs" />
+     <Compile Include="Assets\Scripts\main.cs" />
+     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
+     <Compile Include="Assets\Scripts\modelController.cs" />
+     <Compile Include="Assets\Scripts\roadCollider.cs" />
+     <Compile Include="Assets\Scripts\socketScript.cs" />
+     <Compile Include="Assets\Scripts\TCPConnection.cs" />
+     <Compile Include="Assets\Scripts\UDPReceive.cs" />
+     <Compile Include="Assets\Scripts\UDPSend.cs" />
+     <Compile Include="Assets\Scripts\wheelColliderFront.cs" />
+     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleInteractiveItem.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleRenderScale.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleRotation.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleTouchpad.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\Asteroid.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\AsteroidExplosion.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\EnvironmentController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerAlignmentChecker.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerGameController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerHealthController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerLaser.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerLaserController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerMovementController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\ParticleSystemMultiplier.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\Ring.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\UIController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Intro\IntroManager.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AgentTrail.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AICharacterControl.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\CameraOrbit.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\DestinationMarker.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\ExitArea.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\MazeGameController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\MazeTargetSetting.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\Player.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\SwitchButton.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\Turret.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuAnimator.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuButton.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuItemPopout.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuSelectorMover.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryGun.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryScore.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingTarget.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\UIController.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\GUIArrows.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\InputWarnings.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\ObjectPool.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\PlatformDependentText.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\Reticle.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\ReturnToMainMenu.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\SelectionRadial.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\SelectionSlider.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UIFader.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UIMovement.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UITint.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\VRCameraFade.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\VRCameraUI.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VRDeviceManager.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VREyeRaycaster.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VRFPSCounter.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VRInput.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
+     <Compile Include="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
+     <None Include="Assets\OvrAvatar\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\OVRInspector\Resources\Quit.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+     <None Include="Assets\SampleScenes\Rendering\Movie Player\Resources\Movie Player.txt" />
+     <None Include="Assets\Plugins\Android\Assets\placeholder.txt" />
+     <None Include="Assets\third_party_notices.txt" />
+     <None Include="Assets\SampleScenes\First Person\Resources\OutdoorMotion.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Stealth Assets\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />
+     <None Include="Assets\UnityHDRI\Trinitatis Church\Info.txt" />
+     <None Include="Assets\Parse\Parse.Unity.xml" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Resources\Crosshairs.txt" />
+     <None Include="Assets\OVRInspector\Shaders\Particle-Alpha-Premultiply-AfterTrans.shader" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTest.shader" />
+     <None Include="Assets\OVRHarness\Resources\help.txt" />
+     <None Include="Assets\UnityHDRI\Gareoult\Info.txt" />
+     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Render Frame Rate\Resources\Render Frame Rate.txt" />
+     <None Include="Assets\SampleScenes\Cameras\Per-Eye Cameras\Resources\Per-Eye Cameras.txt" />
+     <None Include="Assets\UnityHDRI\KirbyCove\Info.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\CustomControllers.txt" />
+     <None Include="Assets\OVRHarness\Resources\scenes.txt" />
+     <None Include="Assets\OVRInspector\Resources\OVRSettings.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
+     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShader.shader" />
+     <None Include="Assets\SampleScenes\First Person\Mirror\Resources\Mirror.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Mono Optimization\NearStereoFarMono\DisplayMono.shader" />
+     <None Include="Assets\ROSBridgeLib-master\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\race-track-lake\readmore.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Surface Detail\Resources\SurfaceDetail.txt" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTestFont.shader" />
+     <None Include="Assets\Plugins\Android\Assets\OSIG_Readme.txt" />
+     <None Include="Assets\SampleScenes\Input\Keyboard\Resources\Keyboard.txt" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\UIOverlay.shader" />
+     <None Include="Assets\SampleScenes\Rendering\Mono Optimization\Resources\MonoOptimization.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\SampleScenes\UI\Tracking Volume\Resources\TrackingVolume.txt" />
+     <None Include="Assets\SampleScenes\First Person\Stairs\Resources\Stairs.txt" />
+     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Zombie Assets\Shaders\Rim Lit Bumped Specular.shader" />
+     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\UnityHDRI\Unite\Info.txt" />
+     <None Include="Assets\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Common\Shaders\EdgeGlow.shader" />
+     <None Include="Assets\SampleScenes\UI\Pointers\Resources\Pointers.txt" />
+     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\UnityHDRI\TreasureIsland\Info.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Zombie Assets\Fonts\LuckiestGuy\LICENSE.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\SlidingUV.shader" />
+     <None Include="Assets\OVRInspector\Resources\UISettings.txt" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Script\Shader\OnTopShader.shader" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Script\Shader\CrosshairShader.shader" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Materials\mirror-effect.shader" />
+     <None Include="Assets\SampleScenes\Input\Input Tester\Resources\InputTester.txt" />
+     <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\First Person\Resources\Scale.txt" />
+     <None Include="Assets\UnityHDRI\Seaside\Info.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\archibase.net.txt" />
+     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\SampleScenes\UI\Overlay\Resources\OverlayUIDemo.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\AvatarWithGrab.txt" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Common\Shaders\ColumnGlow.shader" />
+     <None Include="Assets\SampleScenes\UI\Tracking Volume\Shaders\PlanarTexture.shader" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Teleport\Resources\Teleport.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\CustomHands.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Surface Detail\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\OVRHarness\Resources\intro.txt" />
+     <None Include="Assets\SampleScenes\Cameras\Multiple Cameras\Resources\Multiple Cameras.txt" />
+     <None Include="Assets\UnityHDRI\MuirWood\Info.txt" />
+     <None Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Resources\GazeInteraction.txt" />
+     <None Include="Assets\OVR\THIRD_PARTY_NOTICES.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="Parse.Unity">
+ <HintPath>C:/Users/ladmin/Desktop/MCsim_unity/Assets/Parse/Parse.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>C:/Users/ladmin/Desktop/MCsim_unity/Assets/ROSBridgeLib-master/websocket-sharp.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CEC3A729-CB4F-2362-DE49-45527638F1D8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

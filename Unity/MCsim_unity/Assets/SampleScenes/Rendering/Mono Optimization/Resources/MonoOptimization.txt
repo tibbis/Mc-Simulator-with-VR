@@ -1,0 +1,5 @@
+This scene demonstrates a method to optimize stereo rendering by rendering distant parts of the scene in mono (only once).
+
+The near parts of the scene are rendered in stereo over the top. By displaying the mono images at the correct stereo disparity, the join between the two is seamless.
+
+This can improve performance both because it reduces the number of draw calls (half the number in the mono region), and also the pixel fill requirements.

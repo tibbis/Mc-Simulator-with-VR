@@ -1,0 +1,14 @@
+This scene demonstrates different methods to indicate that the user is about to leave the position tracking volume. It queries the Oculus SDK for the tracking frustum and calculates the distance from the viewpoint to the frustum planes. Fading to black before the user reaches the edge of the volume is recommended since it prevents the user from seeing a jarring lack of tracking.
+
+<title>Controls:</title>
+<title>Enable Fade</title>
+The view will fade as the user approaches the edge of the tracking volume.
+
+<title>Enable Arrow</title>
+A 3D arrow appears indicating the direction the user needs to move to get back in the tracking volume.
+
+<title>Max Alpha Fade</title>
+A value less than one will leave the user still able to see the scene outside of the tracking volume.
+
+<title>Fade Distance</title>
+A larger value here will cause the tracking to fade further from the boundary, hence making it less likely the user will actually lose tracking.

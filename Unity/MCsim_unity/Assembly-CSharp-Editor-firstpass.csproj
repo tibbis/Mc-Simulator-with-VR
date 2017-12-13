@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2CADA1BC-EA42-8671-C786-F3B91637A75A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Elias\Scripts\Editor\EliasPlayerEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Editor\WheelEditor.cs" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
+     <None Include="Assets\OvrAvatar\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\Plugins\Elias\Licenses\Commercial License.txt" />
+     <None Include="Assets\OSPNative\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\OVRInspector\LICENSE.txt" />
+     <None Include="Assets\OVRInspector\Resources\Quit.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+     <None Include="Assets\SampleScenes\Rendering\Movie Player\Resources\Movie Player.txt" />
+     <None Include="Assets\Plugins\Android\Assets\placeholder.txt" />
+     <None Include="Assets\third_party_notices.txt" />
+     <None Include="Assets\SampleScenes\First Person\Resources\OutdoorMotion.txt" />
+     <None Include="Assets\OVR\Resources\OVRMRUnlitTransparent.shader" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Stealth Assets\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRChromaKey.cginc" />
+     <None Include="Assets\OculusPlatform\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\SampleScenes\Hands\Toys\Materials\ToyCubeWithOutline.shader" />
+     <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />
+     <None Include="Assets\SampleScenes\GuardianBoundarySystem\Resources\GuardianBoundarySystem.txt" />
+     <None Include="Assets\UnityHDRI\Trinitatis Church\Info.txt" />
+     <None Include="Assets\Parse\Parse.Unity.xml" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Resources\Crosshairs.txt" />
+     <None Include="Assets\OVRInspector\Shaders\Particle-Alpha-Premultiply-AfterTrans.shader" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTest.shader" />
+     <None Include="Assets\OVRHarness\Resources\help.txt" />
+     <None Include="Assets\UnityHDRI\Gareoult\Info.txt" />
+     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Render Frame Rate\Resources\Render Frame Rate.txt" />
+     <None Include="Assets\SampleScenes\Cameras\Per-Eye Cameras\Resources\Per-Eye Cameras.txt" />
+     <None Include="Assets\UnityHDRI\KirbyCove\Info.txt" />
+     <None Include="Assets\SampleScenes\Hands\Toys\Materials\CrosshairZCheat.shader" />
+     <None Include="Assets\SampleScenes\UI\TrackerFrusta\Resources\TrackerFrusta.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\CustomControllers.txt" />
+     <None Include="Assets\OVRInspector\Resources\OVRSettings.txt" />
+     <None Include="Assets\OVRHarness\LICENSE.txt" />
+     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShader.shader" />
+     <None Include="Assets\SampleScenes\First Person\Mirror\Resources\Mirror.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Mono Optimization\NearStereoFarMono\DisplayMono.shader" />
+     <None Include="Assets\Plugins\Elias\Licenses\Non-commercial License.txt" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\race-track-lake\readmore.txt" />
+     <None Include="Assets\SampleScenes\Rendering\Surface Detail\Resources\SurfaceDetail.txt" />
+     <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTestFont.shader" />
+     <None Include="Assets\GazeUI For Canvas\ReadMe.txt" />
+     <None Include="Assets\SampleScenes\Input\Keyboard\Resources\Keyboard.txt" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRUnlit.shader" />
+     <None Include="Assets\SampleScenes\Rendering\Mono Optimization\Resources\MonoOptimization.txt" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\SampleScenes\UI\Tracking Volume\Resources\TrackingVolume.txt" />
+     <None Include="Assets\SampleScenes\First Person\Stairs\Resources\Stairs.txt" />
+     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Zombie Assets\Shaders\Rim Lit Bumped Specular.shader" />
+     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\OvrAvatar\LICENSE.txt" />
+     <None Include="Assets\OVRHarness\Resources\scenes.txt" />
+     <None Include="Assets\UnityHDRI\Unite\Info.txt" />
+     <None Include="Assets\SampleScenes\InputForcusSystemOverlay\Resources\InputFocusSystemOverlay.txt" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Common\Shaders\EdgeGlow.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRCameraFrameLit.shader" />
+     <None Include="Assets\SampleScenes\UI\Pointers\Resources\Pointers.txt" />
+     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\UnityHDRI\TreasureIsland\Info.txt" />
+     <None Include="Assets\SampleScenes\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\Common\Unity Sample Assets\Zombie Assets\Fonts\LuckiestGuy\LICENSE.txt" />
+     <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
+     <None Include="Assets\OVR\Resources\Alpha Premultiply.shader" />
+     <None Include="Assets\OVRInspector\Resources\UISettings.txt" />
+     <None Include="Assets\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Script\Shader\OnTopShader.shader" />
+     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\SampleScenes\First Person\Crosshairs\Script\Shader\CrosshairShader.shader" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Materials\mirror-effect.shader" />
+     <None Include="Assets\SampleScenes\Input\Input Tester\Resources\InputTester.txt" />
+     <None Include="Assets\OSPNative\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\First Person\Resources\Scale.txt" />
+     <None Include="Assets\OVR\Resources\OVRMRCameraFrame.shader" />
+     <None Include="Assets\SampleScenes\Hands\Resources\DistanceGrab.txt" />
+     <None Include="Assets\UnityHDRI\Seaside\Info.txt" />
+     <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRClipPlane.shader" />
+     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\SampleScenes\UI\Overlay\Resources\OverlayUIDemo.txt" />
+     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\AvatarWithGrab.txt" />
+     <None Include="Assets\OculusPlatform\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Common\Shaders\ColumnGlow.shader" />
+     <None Include="Assets\SampleScenes\UI\Tracking Volume\Shaders\PlanarTexture.shader" />
+     <None Include="Assets\SampleScenes\First Person\Locomotion\Teleport\Resources\Teleport.txt" />
+     <None Include="Assets\SampleScenes\Hands\Resources\CustomHands.txt" />
+     <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
+     <None Include="Assets\SampleScenes\Rendering\Surface Detail\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\OVRHarness\Resources\intro.txt" />
+     <None Include="Assets\OVR\LICENSE.txt" />
+     <None Include="Assets\SampleScenes\Cameras\Multiple Cameras\Resources\Multiple Cameras.txt" />
+     <None Include="Assets\UnityHDRI\MuirWood\Info.txt" />
+     <None Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Resources\GazeInteraction.txt" />
+     <None Include="Assets\OVR\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\OVR\Plugins\placeholder.txt" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Parse.Unity">
+ <HintPath>/Users/thibaulthelle/MCsim/Assets/Parse/Parse.Unity.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
