@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mcsim/catkin_MCSIM/devel/setup.sh

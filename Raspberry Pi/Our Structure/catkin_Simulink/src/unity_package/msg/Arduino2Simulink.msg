@@ -1,0 +1,6 @@
+float32 steering_sensor
+float32 acc_sensor
+float32 brake_front
+float32 brake_back
+int32 emergency_freeze
+int32 to_neutral

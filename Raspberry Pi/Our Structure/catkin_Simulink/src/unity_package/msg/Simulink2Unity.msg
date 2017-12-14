@@ -1,0 +1,12 @@
+float32 roll
+float32 pitch
+float32 yaw
+float32 speed
+float32 rpm
+float32 steering_angle
+float32 brake_front
+float32 throttle
+float32 clutch_switch
+int32 gear
+int32 emergencyStop
+float32 rigPositionX

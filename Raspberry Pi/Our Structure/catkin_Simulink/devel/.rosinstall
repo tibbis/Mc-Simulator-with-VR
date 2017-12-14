@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mcsim/catkin_Simulink/devel/setup.sh

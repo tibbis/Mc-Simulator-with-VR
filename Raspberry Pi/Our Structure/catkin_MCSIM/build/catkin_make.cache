@@ -1,0 +1,2 @@
+master
+-DCATKIN_DEVEL_PREFIX=/home/mcsim/catkin_MCSIM/devel -DCMAKE_INSTALL_PREFIX=/home/mcsim/catkin_MCSIM/install -G Unix Makefiles

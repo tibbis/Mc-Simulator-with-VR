@@ -1,0 +1,8 @@
+prefix=/home/mcsim/catkin_Simulink/devel
+
+Name: unityPackage
+Description: Description of unityPackage
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mcsim/catkin_Simulink/devel/lib 
+Requires: 

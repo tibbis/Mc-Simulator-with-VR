@@ -1,0 +1,8 @@
+prefix=/home/mcsim/catkin_MCSIM/devel
+
+Name: master
+Description: Description of master
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mcsim/catkin_MCSIM/devel/lib 
+Requires: 

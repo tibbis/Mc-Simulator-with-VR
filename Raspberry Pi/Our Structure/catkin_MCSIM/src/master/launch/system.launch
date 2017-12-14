@@ -1,0 +1,7 @@
+<launch>
+	<node name="arduino_publisher" pkg="rosserial_python" type="serial_node.py" args="/dev/ttyACM0" respawn="true" output="screen">
+		<param name="baud" value="115200"/>	
+	</node>
+
+<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>
