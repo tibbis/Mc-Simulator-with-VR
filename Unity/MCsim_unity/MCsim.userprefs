@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/OVR/Scripts/Util/OVRGearVrControllerTest.cs">
+    <Files>
+      <File FileName="Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs" Line="46" Column="15" />
+      <File FileName="Assets/OVR/Scripts/OVRCameraRig.cs" Line="144" Column="53" />
+      <File FileName="Assets/GazeUI For Canvas/ReadMe.txt" Line="1" Column="1" />
+      <File FileName="Assets/CarCamera/CarCam.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MirrorReflection.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/modelController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UDPSend.cs" Line="1" Column="1" />
+      <File FileName="Assets/GazeUI For Canvas/Scripts/UI/EyeRaycaster.cs" Line="1" Column="1" />
+      <File FileName="Assets/OvrAvatar/Scripts/OvrAvatarMeshInstance.cs" Line="29" Column="104" />
+      <File FileName="Assets/SampleScenes/Common/Unity Sample Assets/Utility/SimpleMouseRotator.cs" Line="23" Column="26" />
+      <File FileName="Assets/OVR/Scripts/Util/OVRGearVrController.cs" Line="48" Column="10" />
+      <File FileName="Assets/OVR/Scripts/Util/OVRGearVrControllerTest.cs" Line="116" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
