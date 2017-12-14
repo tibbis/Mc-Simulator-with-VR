@@ -16,7 +16,6 @@ There are no actual nodes on the RPI that are being used.
 
 
 Launch File:
-
 This file is used to launch the ROS serial for the arduino connected to ACM0.
 BaudRate and NodeName is also set in this file.
 
@@ -24,5 +23,4 @@ ROS bridge which connects to Unity3D.
 
 
 Custom_messages:
-
 All the custom messages that are used in the ROS network.
