@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\modelController.cs">
+    <Files>
+      <File FileName="Assets\ROSBridgeLib-master\scripts\Arraysubscribe.cs" Line="1" Column="1" />
+      <File FileName="Assets\ROSBridgeLib-master\unity_package\Simulink2Unity.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\modelController.cs" Line="32" Column="51" />
+      <File FileName="Assets\Scripts\main.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EngineSound.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSampleScenes\Scripts\Utils\UIMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\ROSBridgeLib-master\scripts\Subscriber.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
