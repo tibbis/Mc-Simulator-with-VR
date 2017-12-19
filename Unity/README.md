@@ -1,5 +1,5 @@
 # Unity project files and code
-- Download and open the Unity3D on Windows or MacOS
+- Download and open the Unity3D application on Windows or MacOS
 - Then choose to open an existing project
 - Choose MCsim_unity folder
 - To start the simulator, just press the Play button.
