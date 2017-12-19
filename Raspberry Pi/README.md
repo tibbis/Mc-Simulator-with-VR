@@ -1,8 +1,8 @@
 # Raspberry Pi code
 
 Our Structure:
--A copy of how the ROS packages are placed and structured.
--The names of the workspaces and packages are not very accurate.
+- A copy of how the ROS packages are placed and structured.
+- The names of the workspaces and packages are not very accurate.
 
 -catkin_MCSIM: Contains the package master which is used for the launch file.
 
