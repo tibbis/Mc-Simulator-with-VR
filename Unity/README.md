@@ -4,4 +4,4 @@
 - Choose MCsim_unity folder
 - To start the simulator, just press the Play button.
 
-## Documention on how to edit the project is found in Unity_Documentation.pdf
+Documention on how to edit the project is found in [Unity_Documentation.pdf](https://github.com/GitTibbe/Mc-Simulator-with-VR/blob/master/Unity/Unity_Documentation.pdf "Unity_Documentation.pdf") 
