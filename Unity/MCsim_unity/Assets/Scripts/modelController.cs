@@ -19,11 +19,14 @@ public class modelController : MonoBehaviour {
 	public GameObject handlebar; 
 	public GameObject spotlight;
 	public GameObject gameOverUI; // game over menu
+	public GameObject gameWinUI;
 	public GameObject reticle;
 	private GameObject right_hand;
 	public Transform brake_model;
 	public Transform clutch_model;
 	public static bool started=false;
+	public bool gameScore = false;
+	[HideInInspector] public bool newScore = false;
 
 	// model state variables updated from ROS (Subscribed)
 	[HideInInspector] public float roll = 0f; //degrees
@@ -50,14 +53,14 @@ public class modelController : MonoBehaviour {
 	[HideInInspector] public bool manualGear = false; 
 
 	[HideInInspector] public float gameTime = 0f; // simulation time
+	[HideInInspector] public bool goal = false; // game win
 
 	private bool rigHasBeenOn = false;
-	public float inclineThreshold = 0.5f; // threshold for rumble incline effect on rig
+	private float inclineThreshold = 0.5f; // threshold for rumble incline effect on rig
 
 	//private constants
 	private float SPEED_START_ANGLE, MAX_SPEED, MAX_SPEED_ANGLE, MAX_TORQUE, TORQUE_START_ANGLE, MAX_TORQUE_ANGLE, HANDLEBAR_START_ANGLE;
 	private float right_hand_x, right_hand_y, right_hand_z, brakes_x, brakes_y, brakes_z, clutch_x, clutch_y, clutch_z; // hands and brakes/clutch origins
-	private GameObject mc_rotation;
 
 	//default angles of indicators (origins)
 	private float spdY, spdZ, rpmY, rpmZ;
@@ -73,7 +76,6 @@ public class modelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mainCamera = GameObject.Find ("VR_mc"); // get main camera
-		mc_rotation = GameObject.Find("MC_rotation"); // mc new rotation origo
 		right_hand = GameObject.Find("throttleHand");
 
 		isRunning = true; // simulation started
@@ -85,8 +87,6 @@ public class modelController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		//speed=speed*();
 
 		checkSimulinkConnection ();
 		filterRigNoise(); 
@@ -114,7 +114,7 @@ public class modelController : MonoBehaviour {
 			rigHasBeenOn=true;
 		}
 
-		if (transform.gameObject.transform.position.y < -20f) // if fall downf
+		if (transform.gameObject.transform.position.y < -20f) // if fall down
 			gameOver ("earth");
 		if (isOffroad && !OffroadAudioSource.isPlaying && isRunning) { // play offroad sound
 			OffroadAudioSource.Play ();
@@ -130,13 +130,8 @@ public class modelController : MonoBehaviour {
 
 
 	//######## FUNCTIONS #########################################
-	void checkSimulinkConnection(){
-		if (timeSinceCB >= ConnectionTimeout) {
-			gameOver ("Simulink");
-		} else {
-			timeSinceCB += Time.deltaTime;
-		}
-	}
+
+
 
 	void filterRigNoise(){ // filter out accelermoter noise from rig motion
 		
@@ -211,8 +206,21 @@ public class modelController : MonoBehaviour {
 
 	//handle colliders
 	void OnTriggerEnter(Collider other){
+
+		if (gameScore){
+			if (other.name == "goal" && !goal)  { // goal
+				goal=true;
+				gameWin();
+
+			}
+			else if (other.name == "cheatGoal" && !goal) { // going wrong way in to goal
+				gameOver ("CHEATER!");
+
+			}
+
+		}
 		
-		if (other.name != "road" && other.name !="road2") { // do not crash into road
+		if (other.name != "road" && other.name !="road2" && other.name !="goal" && other.name!="cheatGoal") { // do not crash into road
 			if (this.enabled) { // if not already crashed
 				print ("Crashed in to object: " + other.gameObject.name);
 				//if speed exceed crash limit, end game. otherwise stop bike. 
@@ -237,6 +245,63 @@ public class modelController : MonoBehaviour {
 			}
 		}
 	}
+
+	public void gameWin(){ // leaderscore if game score enabled and goal completed
+		Debug.Log("Goal!");
+		isRunning = false; // stop simulator
+		gameWinUI.SetActive (true); // show game over UI
+		reticle.SetActive(true); // show reticle ui
+
+		float bestTime = PlayerPrefs.GetFloat("Score");
+
+		if ((bestTime - gameTime) > 0f ){ // new high score
+			PlayerPrefs.SetFloat ("Score", gameTime); // save best time locally on PC
+			GameObject title = GameObject.Find ("winTitle"); // get text body
+			title.GetComponent<UnityEngine.UI.Text> ().text = "New highscore!"; // write to UI
+			PlayerPrefs.SetFloat("Score", gameTime);// save score
+			bestTime=gameTime;
+			newScore = true;
+		}
+
+
+		//calculate gameTime in min, seconds etc...
+		TimeSpan t = TimeSpan.FromSeconds ((double)gameTime);
+		string time = getTime (t);
+		GameObject text = GameObject.Find ("GameWinText"); // get text body
+		string body = "You completed the map within " + time + ".\n"+ "Best time: "+ bestTime;
+		text.GetComponent<UnityEngine.UI.Text> ().text = body; // write to UI
+		GameObject obs1=GameObject.Find("goal");
+		GameObject obs2=GameObject.Find("cheatGoal");
+		obs1.SetActive (false); // remove colliders
+		obs2.SetActive (false);
+
+		gameTime = 0f; // reset time counter
+		this.enabled = false; // stop model
+
+	}
+
+	string getTime(TimeSpan t){ // convert to string 
+		float seconds = t.Seconds;
+		float minutes = t.Minutes;
+		float millis = t.Milliseconds;
+		string time;
+		if (minutes == 0) {
+			time = seconds.ToString() + " seconds and "+millis+" ms";
+		}
+		else {
+			time =  minutes.ToString() + " min, " + seconds.ToString() + " s, and " + millis+" ms";
+		}
+		return time;
+	}
+
+	void checkSimulinkConnection(){
+		if (timeSinceCB >= ConnectionTimeout) {
+			gameOver ("Simulink");
+		} else {
+			timeSinceCB += Time.deltaTime;
+		}
+	}
+
 
 	//toggle mc spotlight light
 	public void setSpotlight(bool value){
@@ -309,6 +374,8 @@ public class modelController : MonoBehaviour {
 		speed_indicator.transform.localEulerAngles = new Vector3(-speedAngle,spdY,spdZ); // rotate speed indicator
 
 	}
+
+
 
 	//exit application
 	public void quitGame (){

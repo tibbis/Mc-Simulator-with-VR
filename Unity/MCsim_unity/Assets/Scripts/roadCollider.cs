@@ -22,6 +22,7 @@ public class roadCollider : MonoBehaviour {
 		if (!isOnRoad) {
 			isOnRoad = true;
 			modelControllerScript.isOffroad = !isOnRoad; // save to mc model parameter
+
 			//print ("Is on road!" + Time.time);
 		}
 	}

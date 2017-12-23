@@ -12,6 +12,7 @@ public class main : MonoBehaviour {
 	public float nightIntensity = 0.1f;
 	private bool isCalibrating=false;
 	private static string currentMap="speedway";
+	private string strMessage="";
 
 	private bool daylight= true;
 	private int calibrateTimer = 0;
@@ -37,6 +38,10 @@ public class main : MonoBehaviour {
 		speedwayMap = GameObject.Find("DG MotorSpeedWay");
 
 		initMap ();
+		if (PlayerPrefs.GetFloat("Score")==0) // first play
+			PlayerPrefs.SetFloat ("Score", (float)Mathf.Infinity); // reset best score
+		if (PlayerPrefs.GetString ("Name") == "") // first player
+			PlayerPrefs.SetString ("Name", "Unknown Player");
 
 
 	}
@@ -72,6 +77,14 @@ public class main : MonoBehaviour {
 		restartGame();
 	}
 
+	void showScore(){
+		if (modelControllerScript.gameScore) {
+			GameObject score = GameObject.Find ("scoreText");
+			score.GetComponent<UnityEngine.UI.Text> ().text = "Best Time: "+PlayerPrefs.GetFloat("Score").ToString()+"\nBy "+ PlayerPrefs.GetString("Name"); // write to UI
+
+		}
+	}
+
 	void initMap(){
 		if (currentMap == "speedway") {
 			raceMap.SetActive (false);
@@ -81,6 +94,8 @@ public class main : MonoBehaviour {
 			raceMap.SetActive (true);
 			speedwayMap.SetActive (false);
 			currentMap = "race_track";
+
+			showScore ();
 		}
 
 	
@@ -100,7 +115,12 @@ public class main : MonoBehaviour {
 			raceMap.SetActive (true);
 			speedwayMap.SetActive(false);
 			currentMap = "race_track";
+
+			// show best score on menu
+			showScore ();
+
 		}
+
 	}
 
 	//reset VR orientation
@@ -180,6 +200,30 @@ public class main : MonoBehaviour {
 			yield return null;
 		}
 		musicAudio.Stop ();
+	}
+
+	void OnGUI() // get player name
+	{
+		if (modelControllerScript.goal && modelControllerScript.newScore) {
+			GUI.color = Color.white;
+
+			Rect rectObj = new Rect (UnityEngine.Screen.width/2 -15,380,200,400);
+			GUIStyle style = new GUIStyle ();
+			style.fontSize = 25;
+			style.normal.textColor = Color.white;
+
+			style.alignment = TextAnchor.UpperCenter;
+			GUI.Box (rectObj, "Name of player", style);
+
+			strMessage = GUI.TextField (new Rect (UnityEngine.Screen.width/2, 420, 140, 20), strMessage);
+			GUI.backgroundColor = Color.black;
+
+			GUI.color = Color.white;
+			if (GUI.Button (new Rect (UnityEngine.Screen.width/2+150, 420, 40, 20), "Save")) {
+				PlayerPrefs.SetString ("Name", strMessage); // save name of player
+				restartGame();
+			}     
+		}
 	}
 
 

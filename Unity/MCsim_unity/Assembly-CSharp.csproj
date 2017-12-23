@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>4</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
@@ -22,11 +19,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,15 +39,14 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CarCamera\CarCam.cs" />
-     <Compile Include="Assets\EmptyClass.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
@@ -79,34 +73,11 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRModeParms.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRMonoscopic.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRResetOrientation.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRRTOverlayConnector.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRResetOrientation.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
-     <Compile Include="Assets\OvrAvatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
-     <Compile Include="Assets\OvrAvatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatar.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAsset.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetMesh.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetTexture.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBase.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBody.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarComponent.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarDriver.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarHand.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarLocalDriver.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarPacket.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarProjectorRenderComponent.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRemoteDriver.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRenderComponent.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKCAPI.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKManager.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettings.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettingsEditor.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
-     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
      <Compile Include="Assets\OVRHarness\Scripts\OVRHarness.cs" />
      <Compile Include="Assets\OVRHarness\Scripts\OVRSceneLoader.cs" />
      <Compile Include="Assets\OVRInspector\Scripts\IOVRInspectorContext.cs" />
@@ -134,10 +105,37 @@
      <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeEventTrigger.cs" />
      <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeScroller.cs" />
      <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRProgressIndicator.cs" />
-     <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\OvrAvatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+     <Compile Include="Assets\OvrAvatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatar.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAsset.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetMesh.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetTexture.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBase.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBody.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarHand.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarLocalDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarPacket.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarProjectorRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRemoteDriver.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKCAPI.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKManager.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettings.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettingsEditor.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
+     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgePublisher.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeSubscriber.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeWebSocketConnection.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\SimpleJSON.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\DecimalLatLonMsg.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\NavStsMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\NEDMsg.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\NavStsMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\auv_msgs\RPYMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\geographic_msgs\GeoPointMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\PointMsg.cs" />
@@ -150,20 +148,15 @@
      <Compile Include="Assets\ROSBridgeLib-master\geometry_msgs\Vector3Msg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\nav_msgs\OdometryMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\nav_msgs\PathMsg.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeMsg.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgePublisher.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeSubscriber.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\ROSBridgeWebSocketConnection.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\scripts\Arraysubscribe.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\scripts\publisher.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\scripts\publishUnityTopic.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\scripts\Subscriber.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\publishUnityTopic.cs" />
+     <Compile Include="Assets\ROSBridgeLib-master\scripts\publisher.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\CompressedImageMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\ImageMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\PointCloudMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\PointFieldMsg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\sensor_msgs\RangeMsg.cs" />
-     <Compile Include="Assets\ROSBridgeLib-master\SimpleJSON.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float32Msg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float64Msg.cs" />
      <Compile Include="Assets\ROSBridgeLib-master\std_msgs\Float64MultiArrayMsg.cs" />
@@ -211,10 +204,10 @@
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\DragRigidbody.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\DynamicShadowSettings.cs" />
-     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FollowTarget.cs" />
-     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ForcedReset.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ForcedReset.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\LerpControlledBob.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ObjectResetter.cs" />
      <Compile Include="Assets\SampleScenes\Common\Unity Sample Assets\Utility\ParticleSystemDestroyer.cs" />
@@ -251,8 +244,8 @@
      <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\ElevatorDoors.cs" />
      <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\ElevatorTrigger.cs" />
      <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\LightContrastFader.cs" />
-     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\Staircase.cs" />
      <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\StairInducedNausea.cs" />
+     <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\Staircase.cs" />
      <Compile Include="Assets\SampleScenes\First Person\Stairs\Scripts\StairsControl.cs" />
      <Compile Include="Assets\SampleScenes\Hands\Scripts\ColorGrabbable.cs" />
      <Compile Include="Assets\SampleScenes\Hands\Scripts\Hand.cs" />
@@ -268,9 +261,9 @@
      <Compile Include="Assets\SampleScenes\Rendering\Movie Player\MoviePlayerSample.cs" />
      <Compile Include="Assets\SampleScenes\Rendering\Render Frame Rate\TimeWarp30HzSample.cs" />
      <Compile Include="Assets\SampleScenes\Rendering\Surface Detail\Scripts\ShaderDemo.cs" />
-     <Compile Include="Assets\SampleScenes\UI\Common\Scripts\leverSystem.cs" />
      <Compile Include="Assets\SampleScenes\UI\Common\Scripts\LightControl.cs" />
      <Compile Include="Assets\SampleScenes\UI\Common\Scripts\RotationControl.cs" />
+     <Compile Include="Assets\SampleScenes\UI\Common\Scripts\leverSystem.cs" />
      <Compile Include="Assets\SampleScenes\UI\Overlay\Scripts\CylinderGeo.cs" />
      <Compile Include="Assets\SampleScenes\UI\Overlay\Scripts\OverlayUIDemo.cs" />
      <Compile Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Scripts\GazeInteractionDemo.cs" />
@@ -281,17 +274,18 @@
      <Compile Include="Assets\SampleScenes\UI\Tracking Volume\Scripts\TrackingVolumeControl.cs" />
      <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
      <Compile Include="Assets\Scripts\EngineSound.cs" />
-     <Compile Include="Assets\Scripts\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\FPSDisplay.cs" />
-     <Compile Include="Assets\Scripts\humanInput.cs" />
-     <Compile Include="Assets\Scripts\main.cs" />
+     <Compile Include="Assets\Scripts\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\MirrorReflection.cs" />
-     <Compile Include="Assets\Scripts\modelController.cs" />
-     <Compile Include="Assets\Scripts\roadCollider.cs" />
-     <Compile Include="Assets\Scripts\socketScript.cs" />
      <Compile Include="Assets\Scripts\TCPConnection.cs" />
      <Compile Include="Assets\Scripts\UDPReceive.cs" />
      <Compile Include="Assets\Scripts\UDPSend.cs" />
+     <Compile Include="Assets\Scripts\goalCollider.cs" />
+     <Compile Include="Assets\Scripts\humanInput.cs" />
+     <Compile Include="Assets\Scripts\main.cs" />
+     <Compile Include="Assets\Scripts\modelController.cs" />
+     <Compile Include="Assets\Scripts\roadCollider.cs" />
+     <Compile Include="Assets\Scripts\socketScript.cs" />
      <Compile Include="Assets\Scripts\wheelColliderFront.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
@@ -313,8 +307,8 @@
      <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\Ring.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\UIController.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Intro\IntroManager.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AgentTrail.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AICharacterControl.cs" />
+     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AgentTrail.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Maze\CameraOrbit.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Maze\DestinationMarker.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Maze\ExitArea.cs" />
@@ -352,6 +346,7 @@
      <Compile Include="Assets\VRStandardAssets\Scripts\VRInput.cs" />
      <Compile Include="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
      <Compile Include="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+     <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
      <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
      <None Include="Assets\OvrAvatar\THIRD_PARTY_NOTICES.txt" />
      <None Include="Assets\OVRInspector\Resources\Quit.txt" />
@@ -437,32 +432,32 @@
      <None Include="Assets\UnityHDRI\MuirWood\Info.txt" />
      <None Include="Assets\SampleScenes\UI\Pointers - Gaze Click\Resources\GazeInteraction.txt" />
      <None Include="Assets\OVR\THIRD_PARTY_NOTICES.txt" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Parse.Unity">
- <HintPath>C:/Users/ladmin/Desktop/MCsim_unity/Assets/Parse/Parse.Unity.dll</HintPath>
+ <HintPath>/Users/thibaulthelle/GitHub/Mc-Simulator-with-VR/Unity/MCsim_unity/Assets/Parse/Parse.Unity.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/ladmin/Desktop/MCsim_unity/Assets/ROSBridgeLib-master/websocket-sharp.dll</HintPath>
+ <HintPath>/Users/thibaulthelle/GitHub/Mc-Simulator-with-VR/Unity/MCsim_unity/Assets/ROSBridgeLib-master/websocket-sharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

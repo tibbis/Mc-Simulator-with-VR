@@ -9,8 +9,8 @@ using UnityEngine;
 //Snippet of code that should be attached to the motor cycle object
 //Another way to add sound would be with an animator crontroller
 
-//You can play a single audio clip using Play, Pause and Stop.
-//You can also adjust its volume while playing using the volume property, or seek using time.
+//You can play a single audio clip using Play, Pause and Stop. 
+//You can also adjust its volume while playing using the volume property, or seek using time. 
 //Multiple sounds can be played on one AudioSource using PlayOneShot
 
 //Comment:using audio clips insteaf of audiosources barerely save any
@@ -27,7 +27,7 @@ public class EngineSound : MonoBehaviour {
     //changed directly in unity. currenTorque should for future use
     //be accessed from the actual motorcycle object and not the unity window
     public float currentRPM;
-    //public int[] gearRatio;
+    //public int[] gearRatio; 
 	public int gear;
     //public bool highRPM, midRPM, lowRPM;
 	private int oldGear = 0;
@@ -48,28 +48,31 @@ public class EngineSound : MonoBehaviour {
 	private float brake_timeout=3f; // seconds
     // Use this for initialization
     void Start() {
-			GameObject mc = GameObject.Find("Motorcycle"); // get mc gameobject
-			modelControllerScript = mc.GetComponent<modelController>(); // mc script
+		GameObject mc = GameObject.Find("Motorcycle"); // get mc gameobject
+		modelControllerScript = mc.GetComponent<modelController>(); // mc script
 
-	        //gearRatio = new int[] { 900, 1880, 3400, 5800, 8850, 10000, 13000 };
-	        //AudioSource = GetComponent<AudioSource>();
-	    AudioSource[] audios = GetComponents<AudioSource>();
+        //gearRatio = new int[] { 900, 1880, 3400, 5800, 8850, 10000, 13000 };
+        //AudioSource = GetComponent<AudioSource>();
+        AudioSource[] audios = GetComponents<AudioSource>();
 
-	        //Grab audioclip from sources, same numbering as the unity order!
-			RPM4000 = audios[0];
-	    shiftUp = audios[1];
-	    ignition = audios[2];
-	    shiftDown = audios[3];
-			brake = audios[6];
-
-			gear = 0;//Neutral gear
-			oldGear = gear;
+        //Grab audioclip from sources, same numbering as the unity order!
+        //motor_running = audios[0];
+		RPM4000 = audios[0];
+        shiftUp = audios[1];
+        ignition = audios[2];
+        shiftDown = audios[3];
+		brake = audios[6];
+        //LoopRPM3000 = audios[4];
+        //LoopRPM6000 = audios[5];
+		gear = 0;//Neutral gear
+		oldGear = gear;
+		//lowRPM = true;
 
     }
 
     // Update is called once per frame
     void FixedUpdate() {
-
+		
         engineSound();//Updates the sound of the engine
 
     }
@@ -84,14 +87,18 @@ public class EngineSound : MonoBehaviour {
 			Engine_online = 0;
 			Kill_engine = 0;
 			RPM4000.Stop();
-
+			//LoopRPM3000.Stop ();
+			//LoopRPM6000.Stop ();
+			//motor_running.Stop ();
+			//currentSource = motor_running;
 		} else if (modelControllerScript.isRunning && Engine_online == 0) { // // starting motor
-			ignition.Play ();
+			ignition.Play ();//AudioSource.PlayOneShot(shiftUp);
 			Ignite_engine = 0;//Add another bool to make motor running an option whilst on
 
-			StartCoroutine(fadeIn (RPM4000)); // crossfade sound
+			StartCoroutine(fadeIn (RPM4000)); // crossfade 
 			//This is to start the loop for motor, cannot be called too often (restarts instead of loops)
-
+			//motor_running.Play ();
+			//currentSource = motor_running;
 			Engine_online = 1;
 		}
 		if (modelControllerScript.isRunning){
@@ -100,8 +107,23 @@ public class EngineSound : MonoBehaviour {
 		}
 
 		if (modelControllerScript.isRunning) {
+			//initiateMotorSound (currentRPM);
 
-			RPM4000.pitch=(3*currentRPM/(maxRPM)) + startingPitch; // pitch the motor sound after the current rpm
+			RPM4000.pitch=(3*currentRPM/(maxRPM)) + startingPitch;
+
+//			if (currentRPM < 4500) {
+//				motor_running.pitch = (currentRPM) / (maxRPM) + 1;//Flat gear pitch change doesn't seem to work==>why?-> (currentRPM) / (2000+100) + 1 + gear / 8;// //Audio acceses audio component on object, pitch is the float value of the audios pitch
+//			}
+//			if (currentRPM <= 8500 && currentRPM >= 4500) {//mid rpm
+//				LoopRPM3000.pitch = (currentRPM) / (maxRPM) + 1;
+//			}
+//			if (currentRPM > 8500) {//high rpm
+//				LoopRPM6000.pitch = (currentRPM) / (maxRPM) + 1;//(currentRPM) / (maxRPM - gearRatio[gear]) + 1;
+//
+//			}
+//		}
+
+		
 
 		}
 	}
@@ -122,7 +144,7 @@ public class EngineSound : MonoBehaviour {
 		}
 
 	}
-
+		
 	IEnumerator fadeOut(AudioSource sound, float delay){
 		float t = 0;
 		float vol = sound.volume;
@@ -149,7 +171,7 @@ public class EngineSound : MonoBehaviour {
 	}
 
 	void brakeSound(){
-
+		
 		if (modelControllerScript.brake_front > 0.3f) { // braking hard
 			if (!isBraking) { // not already playing and timeout limit // && (Time.deltaTime-time_since_brake >= brake_timeout)
 				brake.volume = 1f;
@@ -169,3 +191,5 @@ public class EngineSound : MonoBehaviour {
 
 
 }
+
+
